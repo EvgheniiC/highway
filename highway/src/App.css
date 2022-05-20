@@ -1,0 +1,76 @@
+.btn-sixt {
+  color: #fff;
+  background-color: #e46b2a;
+  border-color: #e46b2a
+}
+
+.btn-sixt:hover {
+  color: #fff;
+  background-color: #f6a275;
+  border-color: #f6a275
+}
+
+.btn-check:focus+.btn-sixt,
+.btn-sixt:focus {
+  color: #fff;
+  background-color: #f6a275;
+  border-color: #f6a275;
+  box-shadow: 0 0 0 .25rem rgba(225, 83, 97, .5)
+}
+
+.btn-check:active+.btn-sixt,
+.btn-check:checked+.btn-sixt,
+.btn-sixt.active,
+.btn-sixt:active,
+.show>.btn-sixt.dropdown-toggle {
+  color: #fff;
+  background-color: #f6a275;
+  border-color: #f6a275
+}
+
+.btn-check:active+.btn-sixt:focus,
+.btn-check:checked+.btn-sixt:focus,
+.btn-sixt.active:focus,
+.btn-sixt:active:focus,
+.show>.btn-sixt.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .25rem rgba(225, 83, 97, .5)
+}
+
+.btn-sixt.disabled,
+.btn-sixt:disabled {
+  color: #fff;
+  background-color: #f6a275;
+  border-color: #f6a275
+}
+
+.no-style {
+  color: inherit;
+  text-decoration: none;
+}
+
+.no-style:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.no-style:disabled {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  padding: "2em"
+}
+
+.label-above {
+  margin-top: .5em;
+}
+
+.pdf-container {
+  outline: 1px solid black;
+}
+
+
+.pdfobject-container {
+  height: 100%;
+}

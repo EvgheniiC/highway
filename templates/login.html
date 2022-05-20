@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<style>
+  html, body {
+      height: 100%;
+  }
+  .btn-outline-sixt {
+      color: #FF6F1A;
+      background-color: #FF6F1A;
+      border-color: #FF6F1A
+  }
+
+  .btn-outline-sixt:hover {
+      color: #fff;
+      background-color: #ff5e00;
+      border-color: #ff5e00;
+  }
+
+  .btn-check:focus+.btn-outline-sixt,
+  .btn-outline-sixt:focus {
+      box-shadow: 0 0 0 .25rem rgba(220, 53, 69, .5)
+  }
+
+  .btn-check:active+.btn-outline-sixt,
+  .btn-check:checked+.btn-outline-sixt,
+  .btn-outline-sixt.active,
+  .btn-outline-sixt.dropdown-toggle.show,
+  .btn-outline-sixt:active {
+      color: #fff;
+      background-color: #FF6F1A;
+      border-color: #FF6F1A
+  }
+
+  .btn-check:active+.btn-outline-sixt:focus,
+  .btn-check:checked+.btn-outline-sixt:focus,
+  .btn-outline-sixt.active:focus,
+  .btn-outline-sixt.dropdown-toggle.show:focus,
+  .btn-outline-sixt:active:focus {
+      box-shadow: 0 0 0 .25rem rgba(220, 53, 69, .5)
+  }
+
+  .btn-outline-sixt.disabled,
+  .btn-outline-sixt:disabled {
+      color: #FF6F1A;
+      background-color: transparent
+  }
+
+  .form-control {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+</style>
+</head>
+
+<body style="height:100%; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url({{url_for('static', filename='background.jpg')}})">
+  <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center ">
+      <div class="row h-100 justify-content-center align-items-center">
+          <form class="col-12 bg-secondary bg-opacity-75 bg-gradient p-4 rounded-1" action="login" method="POST">
+              <h2 class="text-center text-white mb-4">Cipher login</h2>
+              <div class="input-group mb-3 d-flex flex-column justify-content-between">
+                <div>
+                  
+                  <input class="form-control" id="username" type="username" name="username" placeholder="Username" required aria-describedby="button-addon1">
+                </div>
+                <div>
+                  <input class="form-control" type="password" name="password" placeholder="Password" required aria-describedby="button-addon2">
+                </div>
+                  <button class="btn btn-outline-sixt text-white" type="submit" id="button-addon2">Login</button>
+              </div>
+              <h5 class="text-danger text-center">{{ error }}</h5>
+          </form>
+      </div>
+  </div>
+</body>
+
+</html>
